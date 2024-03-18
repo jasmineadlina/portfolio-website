@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta chartset="utf-8">
+    <meta name="viewport" content="widht=device-widht, initial-scale=1">
+    <title>JASMINE ADLINA HAPSARI</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+<body>
+
+    <!--header-->
+    <div class="medsos">
+        <div class="container">
+            <ul>
+                <li><a href="https://www.instagram.com/jasmineadl?igsh=MWx5Nzd5Y2xtcmhzeQ=="><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/jasmine-adlina-5968191b6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <header>
+        <div class="container">
+            <h1> <a href="index.html">JASMINE ADLINA</a></h1>
+            <ul>
+                <li class="active"><a href="index.html">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#experiences">EXPERIENCES</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!--banner-->
+    <section class="banner">
+        <h2>WELCOME TO MY PORTFOLIO</h2>
+    </section>
+
+    <!--about-->
+    <section id="about" class="about">
+        <div class="container">
+            <h3>ABOUT</h3>
+            <p> A 6th semester majoring in Robotics and Artificial Intelligence Engineering at Universitas Airlangga.
+                I'd so much like to learn about mobile robots and image processing. Currently, I am actively involved in Universitas Airlangga's thematic robot team as a project manager, where I am responsible for coordinating various aspects of the project and ensuring continuous progress. 
+                My eagerness to continue learning and contributing in this field is immense, and I am excited to further explore advancements in robotics technology and image processing in the future.
+            </p>
+        </div>
+    </section> 
+
+    <!--experiences-->
+    <section id="experiences" class="experiences">
+        <div class="container">
+            <h3>EXPERIENCES</h3>
+            <div class="box">
+                <div class="col-4">
+                    <div class="icon"><i class="fa-solid fa-code"></i></div>
+                    <h4>ARDUINO</h4>
+                    <p> -Mini AGV project in 2nd Robotic Experiment using Arduino Mega</p>
+                    <p> -Smart home IoT system using ESP8266</p>
+                </div>
+                <div class="col-4">
+                    <div class="icon"><i class="fa-brands fa-python"></i></div>
+                    <h4>PYTHON</h4>
+                    <p> -Face payment method in Computer Vision final exam project using OpenCV library</p>
+                    <p> -Face payment GUI in Computer Vision final exam project using tkinter library</p>
+                    <p> -Final exam Machine Learning project using sklearn</p>
+                    <p> -Final exam Machine Learning lab using Python from scratch</p>
+                </div>
+                <div class="col-4">
+                    <div class="icon"><i class="fa-solid fa-cubes"></i></div>
+                    <h4>3D DESIGN</h4>
+                    <p> -Computer Aided Design final project</p>
+                    <p> -Made a chassis for Mobile Robot's final exam project</p>
+                </div>
+                <div class="col-4">
+                    <div class="icon"><i class="fa-solid fa-paintbrush"></i></div>
+                    <h4>2D DESIGN</h4>
+                    <p> -Designed Instagram feeds for Astro_24 thematic robot team branding at @astrounair</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer id="contact">
+        <section class="footer">
+            <div class="container">
+                <h3>CONTACT ME</h3>
+                <div class="box">
+                    <div class="col-5">
+                        <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                        <h4>E-MAIL</h4>
+                        <p><a href="mailto:jasmine.adlina.hapsari-2021@ftmm.unair.ac.id"> jasmine.adlina.hapsari-2021@ftmm.unair.ac.id </a></p>
+                    </div>
+                    <div class="col-5">
+                        <div class="icon"><i class="fa-brands fa-instagram"></i></div>
+                        <h4>INSTAGRAM</h4>
+                        <p><a href="https://www.instagram.com/jasmineadl?igsh=MWx5Nzd5Y2xtcmhzeQ==">instagram.com/jasmineadl </a></p>
+                    </div>
+                    <div class="col-5">
+                        <div class="icon"><i class="fa-brands fa-linkedin"></i></div>
+                        <h4>LINKEDIN</h4>
+                        <p><a href="https://www.linkedin.com/in/jasmine-adlina-5968191b6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Jasmine Adlina</a></p>
+                    </div>
+                    <div class="col-5">
+                        <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                        <h4>PHONE NUMBER</h4>
+                        <p> <a href="https://wa.me/qr/ATINXEIVG2VEO1">081807777030</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+
+</body>
+
+<script>
+    $(document).ready(function () {
+        // Add smooth scrolling to all links
+        $("a").on('click', function (event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function () {
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            }
+        });
+    });
+</script>
+
+</html>
